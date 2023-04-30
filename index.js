@@ -11,6 +11,9 @@ const app = express();
 dotenv.config()
 const PORT = 8000;
 
+app.get("/", (req, res)=> {
+    res.send ("Hello")
+})
 
 const connect = async () => {
     try {
